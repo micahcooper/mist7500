@@ -9,7 +9,7 @@ public class LoanCalculator {
                 double monthlyRate;
                
                 double amountLoaned = Double.parseDouble(args[0]);
-                double interestRate = Double.parseDouble(args[1]);
+                double interestRate = Double.parseDouble(args[1])/100;
                 int termInYears = Integer.parseInt(args[2]);
                
                 monthlyRate = interestRate / 12;
