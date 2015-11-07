@@ -14,9 +14,11 @@ public class LoanCalculator {
                
                 monthlyRate = interestRate / 12;
                 totalMonths = termInYears * 12;
-                monthlyPayment = (amountLoaned * monthlyRate) / (1 - (Math.pow( (1 + monthlyRate), -totalMonths) ));
+                monthlyPayment = (amountLoaned * monthlyRate) / (1 - (Math.pow( (1 + monthlyRate), (-1*totalMonths)) ));
                
-                System.out.println(monthlyPayment);
+                System.out.println("Monthly payment "+monthlyPayment);
+                System.out.println("Monthly rate "+monthlyRate);
+                System.out.println("Total months "+totalMonths);
         }
  
 }
