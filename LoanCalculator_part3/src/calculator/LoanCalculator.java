@@ -28,8 +28,7 @@ public class LoanCalculator {
         //give the loan object the initial loan amount
         myLoan.setLoanAmount(loanAmount);
         
-        //
-        
+        //retrieve and print the monthly values
         myLoan.calculateMonthlyValues();
 	}
 
