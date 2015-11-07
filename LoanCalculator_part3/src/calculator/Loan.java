@@ -67,7 +67,7 @@ public class Loan {
 		this.termInYears = termInYears;
 	}
 
-	public void printValues(){
+	public void calculateMonthlyValues(){
 		System.out.println("Number of months: "+getTermInMonths());
 		System.out.println("Monthly interest rate: "+getMonthlyRate());
 		System.out.println("Monthly payment: "+getMonthlyPayment());
