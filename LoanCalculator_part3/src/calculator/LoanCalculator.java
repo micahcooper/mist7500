@@ -18,9 +18,18 @@ public class LoanCalculator {
         double interestRate = Double.parseDouble(args[1]);
         int termInYears = Integer.parseInt(args[2]);
         
-        Loan myLoan = new Loan(loanAmount, interestRate, termInYears);
+        //Instantiate my Loan object
+        Loan myLoan = new Loan();
         
-        myLoan.printValues();
+        //give the loan object the loan term in years
+        myLoan.setTermInYears(termInYears);
+        //give the loan object the annual interest rate
+        myLoan.setInterestRate(interestRate);
+        //give the loan object the initial loan amount
+        myLoan.setLoanAmount(loanAmount);
+        
+        //retrieve and print the monthly values
+        myLoan.calculateMonthlyValues();
 	}
 
 }
