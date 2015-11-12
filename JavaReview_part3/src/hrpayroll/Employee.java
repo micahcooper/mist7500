@@ -11,23 +11,31 @@ public class Employee {
 	private String firstName;
 	private String lastName;
 	private int employeeNumber;
+	private double monthlyPay;
 	
 	public Employee(){
-		firstName = "";
-		lastName = "";
+		this.firstName = "";
+		this.lastName = "";
+		this.employeeNumber = 0;
+		this.monthlyPay = 0.0;
+		
 	}
 	
 	public Employee(String firstName, String lastName, int employeeNumber){
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.employeeNumber = employeeNumber;
+		this.monthlyPay = 0.0;
 	}
 
+	protected double getMonthlyPay(){
+		return this.monthlyPay;
+	}
 	/**
 	 * @return the employeeNumber
 	 */
 	protected int getEmployeeNumber() {
-		return employeeNumber;
+		return this.employeeNumber;
 	}
 
 	/**
@@ -41,7 +49,7 @@ public class Employee {
 	 * @return the firstName
 	 */
 	protected String getFirstName() {
-		return firstName;
+		return this.firstName;
 	}
 
 	/**
@@ -55,7 +63,7 @@ public class Employee {
 	 * @return the lastName
 	 */
 	protected String getLastName() {
-		return lastName;
+		return this.lastName;
 	}
 
 	/**
@@ -63,5 +71,14 @@ public class Employee {
 	 */
 	protected void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Employee [firstName=" + firstName + ", lastName=" + lastName + ", employeeNumber=" + employeeNumber
+				+ ", monthlyPay=" + monthlyPay + "]";
 	}
 }
