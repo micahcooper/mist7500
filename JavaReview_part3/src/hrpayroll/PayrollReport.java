@@ -12,6 +12,7 @@ public class PayrollReport {
 	public static void main(String[] args){
 		//create a new array to house the employees
 		Employee[] hrList = new Employee[6];
+		//create a variable to hold the monthly pay amount
 		double totalPayroll = 0;
 		
 		//add employees to the array

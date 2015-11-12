@@ -11,7 +11,7 @@ public class SalariedEmployee extends Employee {
 
 	private double yearlySalary;
 	/**
-	 * 
+	 * default constructor, initializes the variables to a default value
 	 */
 	public SalariedEmployee() {
 		// TODO Auto-generated constructor stub
@@ -20,7 +20,10 @@ public class SalariedEmployee extends Employee {
 	}
 	
 	/**
-	 * 
+	 * @param firstName
+	 * @param lastName
+	 * @param employeeNumber
+	 * @param yearlySalary
 	 */
 	public SalariedEmployee(String firstName, String lastName, int employeeNumber, double yearlySalary){
 		super(firstName, lastName, employeeNumber);
@@ -28,21 +31,21 @@ public class SalariedEmployee extends Employee {
 	}
 	
 	/**
-	 * 
+	 * @return the monthlyPay
 	 */
 	protected double getMonthlyPay(){
 		return yearlySalary / 12;
 	}
 	
 	/**
-	 * 
+	 * @return the type of employee
 	 */
 	protected String getEmployeeType(){
 		return "Salaried Employee";
 	}
 	
 	/**
-	 * 
+	 * @return string representation of the object
 	 */
 	public String toString(){
 		return "Name: "+super.getLastName()+", "+super.getFirstName()+"\t"+
