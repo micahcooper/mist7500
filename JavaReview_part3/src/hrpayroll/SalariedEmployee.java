@@ -30,7 +30,7 @@ public class SalariedEmployee extends Employee {
 	/**
 	 * 
 	 */
-	protected double getMonthlySalary(){
+	protected double getMonthlyPay(){
 		return yearlySalary / 12;
 	}
 	
@@ -47,7 +47,7 @@ public class SalariedEmployee extends Employee {
 	public String toString(){
 		return "Name: "+super.getLastName()+", "+super.getFirstName()+"\t"+
 				"Type: "+this.getEmployeeType()+"\t"+
-				"Monthly pay: "+ this.getMonthlySalary();
+				"Monthly pay: "+ this.getMonthlyPay();
 	}
 
 	/**
