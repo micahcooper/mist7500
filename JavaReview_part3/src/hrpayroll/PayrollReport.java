@@ -23,6 +23,8 @@ public class PayrollReport {
 		hrList[4] = new StudentEmployee("clark", "edwards", 127, 25, 10);
 		hrList[5] = new StudentEmployee("monique", "rogers", 128, 44, 10);
 		
+		//begin the monthly payroll report
+		System.out.println("***** Payroll Report *****");
 		//iterate over the array, print out the toString, add the monthly pay
 		for(int i=0; i<hrList.length; i++){
 			System.out.println(hrList[i].toString());
