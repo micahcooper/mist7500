@@ -4,7 +4,7 @@
 package hrpayroll;
 
 /**
- * @author mrcooper
+ * @author micah cooper
  *
  */
 public class HourlyEmployee extends Employee{
