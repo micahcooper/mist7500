@@ -33,9 +33,8 @@ public class SalariedEmployee extends Employee {
 	}
 	
 	public String toString(){
-		return "First Name: "+super.getFirstName()+"\n"+
-				"Last name: "+super.getLastName()+"\n"+
-				"Employee type: "+this.getEmployeeType()+"\n"+
+		return "Name: "+super.getLastName()+", "+super.getFirstName()+"\t"+
+				"Type: "+this.getEmployeeType()+"\t"+
 				"Monthly pay: "+ this.getMonthlySalary();
 	}
 

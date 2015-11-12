@@ -27,6 +27,10 @@ public class HourlyEmployee extends Employee{
 		this.monthlyHours = monthlyHours;
 	}
 	
+	protected double getMonthlyPay(){
+		return this.getMonthlyHours()*this.getHourlyRate();
+	}
+	
 	protected String getEmployeeType(){
 		return "Hourly employee";
 	}
@@ -63,7 +67,9 @@ public class HourlyEmployee extends Employee{
 	 */
 	@Override
 	public String toString() {
-		return "HourlyEmployee [monthlyHours=" + monthlyHours + ", hourlyRate=" + hourlyRate + getEmployeeType()+ "]";
+		return "Name: "+super.getLastName()+", "+super.getFirstName()+"\t"+
+				"Type: "+this.getEmployeeType()+"\t"+
+				"Monthly pay: "+ this.getMonthlyPay();
 	}
 
 }
