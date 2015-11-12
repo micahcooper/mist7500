@@ -21,16 +21,25 @@ public class HourlyEmployee extends Employee{
 		this.hourlyRate = 0;
 	}
 	
+	/**
+	 * 
+	 */
 	public HourlyEmployee(String firstName, String lastName, int employeeNumber, int monthlyHours, double hourlyRate ){
 		super(firstName,lastName,employeeNumber);
 		this.hourlyRate = hourlyRate;
 		this.monthlyHours = monthlyHours;
 	}
 	
+	/**
+	 * 
+	 */
 	protected double getMonthlyPay(){
 		return this.getMonthlyHours()*this.getHourlyRate();
 	}
 	
+	/**
+	 * 
+	 */
 	protected String getEmployeeType(){
 		return "Hourly employee";
 	}

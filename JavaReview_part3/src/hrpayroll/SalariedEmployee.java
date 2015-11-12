@@ -19,19 +19,31 @@ public class SalariedEmployee extends Employee {
 		this.setYearlySalary(0);
 	}
 	
+	/**
+	 * 
+	 */
 	public SalariedEmployee(String firstName, String lastName, int employeeNumber, double yearlySalary){
 		super(firstName, lastName, employeeNumber);
 		this.setYearlySalary(yearlySalary);
 	}
 	
+	/**
+	 * 
+	 */
 	protected double getMonthlySalary(){
 		return yearlySalary / 12;
 	}
 	
+	/**
+	 * 
+	 */
 	protected String getEmployeeType(){
 		return "Salaried Employee";
 	}
 	
+	/**
+	 * 
+	 */
 	public String toString(){
 		return "Name: "+super.getLastName()+", "+super.getFirstName()+"\t"+
 				"Type: "+this.getEmployeeType()+"\t"+

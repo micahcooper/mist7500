@@ -13,7 +13,6 @@ public class StudentEmployee extends HourlyEmployee{
 	 * 
 	 */
 	public StudentEmployee() {
-		// TODO Auto-generated constructor stub
 		super();
 	}
 	
@@ -21,6 +20,9 @@ public class StudentEmployee extends HourlyEmployee{
 		super(firstName, lastName, employeeNumber, monthlyHours, hourlyRate);
 	}
 
+	/**
+	 * 
+	 */
 	protected double getMonthlyPay(){
 		if(super.getMonthlyHours() > 40)
 			return 40*super.getHourlyRate();
@@ -28,6 +30,9 @@ public class StudentEmployee extends HourlyEmployee{
 			return (double)super.getMonthlyHours()*super.getHourlyRate();
 	}
 	
+	/**
+	 * 
+	 */
 	protected String getEmployeeType(){
 		return "Student Employee";
 	}

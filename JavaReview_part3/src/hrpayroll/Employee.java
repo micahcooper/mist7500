@@ -13,6 +13,9 @@ public class Employee {
 	private int employeeNumber;
 	private double monthlyPay;
 	
+	/**
+	 * 
+	 */
 	public Employee(){
 		this.firstName = "";
 		this.lastName = "";
@@ -21,6 +24,9 @@ public class Employee {
 		
 	}
 	
+	/**
+	 * 
+	 */
 	public Employee(String firstName, String lastName, int employeeNumber){
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -28,6 +34,9 @@ public class Employee {
 		this.monthlyPay = 0.0;
 	}
 
+	/**
+	 * 
+	 */
 	protected double getMonthlyPay(){
 		return this.monthlyPay;
 	}
