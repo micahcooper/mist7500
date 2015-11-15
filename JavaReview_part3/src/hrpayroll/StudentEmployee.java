@@ -10,18 +10,25 @@ package hrpayroll;
 public class StudentEmployee extends HourlyEmployee{
 
 	/**
-	 * 
+	 * default constructor
 	 */
 	public StudentEmployee() {
 		super();
 	}
 	
+	/**
+	 * @param firstName
+	 * @param lastName
+	 * @param employeeNumber
+	 * @param monthlyHours
+	 * @param hourlyRate
+	 */
 	public StudentEmployee(String firstName, String lastName, int employeeNumber, int monthlyHours, int hourlyRate){
 		super(firstName, lastName, employeeNumber, monthlyHours, hourlyRate);
 	}
 
 	/**
-	 * 
+	 * @return the monthly pay calculation
 	 */
 	protected double getMonthlyPay(){
 		if(super.getMonthlyHours() > 40)
@@ -31,7 +38,7 @@ public class StudentEmployee extends HourlyEmployee{
 	}
 	
 	/**
-	 * 
+	 * @return the employee type
 	 */
 	protected String getEmployeeType(){
 		return "Student Employee";

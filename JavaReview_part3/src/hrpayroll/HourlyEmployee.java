@@ -12,17 +12,20 @@ public class HourlyEmployee extends Employee{
 	private double hourlyRate;
 	
 	/**
-	 * 
+	 * default constructor
 	 */
 	public HourlyEmployee() {
-		// TODO Auto-generated constructor stub
 		super();
 		this.monthlyHours = 0;
 		this.hourlyRate = 0;
 	}
 	
 	/**
-	 * 
+	 * @param firstName
+	 * @param lastName
+	 * @param employeeNumber
+	 * @param monthlyHours
+	 * @param hourlyRate
 	 */
 	public HourlyEmployee(String firstName, String lastName, int employeeNumber, int monthlyHours, double hourlyRate ){
 		super(firstName,lastName,employeeNumber);
@@ -31,14 +34,14 @@ public class HourlyEmployee extends Employee{
 	}
 	
 	/**
-	 * 
+	 * @return the monthly pay amount
 	 */
 	protected double getMonthlyPay(){
 		return this.getMonthlyHours()*this.getHourlyRate();
 	}
 	
 	/**
-	 * 
+	 * @return the employee type
 	 */
 	protected String getEmployeeType(){
 		return "Hourly employee";
